@@ -1,0 +1,38 @@
+PS C:\Users\miavi\Desktop> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\miavi\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----    2024/02/05(月)     21:26                git_challenge
+
+
+PS C:\Users\miavi\Desktop>
+PS C:\Users\miavi\Desktop> cd git_challenge
+PS C:\Users\miavi\Desktop\git_challenge> git init
+Initialized empty Git repository in C:/Users/miavi/Desktop/git_challenge/.git/
+PS C:\Users\miavi\Desktop\git_challenge> git add hello_world.txt
+PS C:\Users\miavi\Desktop\git_challenge> git commit -m"hello_world.txtを追加"
+[main (root-commit) 56b3ed9] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\miavi\Desktop\git_challenge> git commit -m"日本語訳を追記"
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\miavi\Desktop\git_challenge> git log --oneline
+56b3ed9 (HEAD -> main) hello_world.txtを追加
+PS C:\Users\miavi\Desktop\git_challenge> git add hello_world.txt
+PS C:\Users\miavi\Desktop\git_challenge> git commit -m"日本語訳を追記"
+[main f8ffcd8] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\miavi\Desktop\git_challenge> git log --oneline
+f8ffcd8 (HEAD -> main) 日本語訳を追記
+56b3ed9 hello_world.txtを追加
+PS C:\Users\miavi\Desktop\git_challenge> 
